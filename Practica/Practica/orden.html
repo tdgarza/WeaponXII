@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aqui haz tu pedido</title>
+</head>
+<body>
+<center><h3>REALIZA TU PEDIDO</h3></center>
+
+<form method="get" action="orden.html">
+	<h2>Que tipo de hamburguesa quieres</h2>
+	<select name="hamburguesa" id="hamburguesa">
+		<option value="sencilla">Sencilla</option>
+		<option value="doble">Doble</option>		
+		<option value="triple">Triple</option>
+		<option value="Bacon">Bacon</option>
+		<option value="Batman">Batman</option>
+	</select>
+	<h2>Complementos</h2>
+	<input type="checkbox" name="comp1" id="comp1" value="lechuga">
+	<label for="comp1">Lechuga</label><br>
+	<input type="checkbox" name="comp2" id="comp2" value="tomate">
+	<label for="comp2">Tomate</label><br>
+	<input type="checkbox" name="comp3" id="comp3" value="cebolla">
+	<label for="comp3">Cebolla</label><br>
+	<input type="checkbox" name="comp4" id="comp4" value="aguacate">
+	<label for="comp4">Aguacate</label><br>
+	<input type="checkbox" name="comp5" id="comp5" value="quesoamarillo">
+	<label for="comp5">Queso Amarillo</label><br>
+	
+	<h3>Tamaño del Combo</h3>
+	<input type="radio" id="chico" name="combo" value="chico">
+	<label for="chico">Chico</label><br>
+	<input type="radio" id="mediano" name="combo" value="mediano">
+	<label for="mediano">Mediano</label><br>
+	<input type="radio" id="grande" name="combo" value="grande">
+	<label for="grande">Grande</label><br>
+
+	<h2>Contacto</h2>
+	<table>
+		<tr>
+			<td><label for="nombre">Nombre:</label></td>
+			<td><input type="text" id="nombre" name="nombre" placeholder="Aqui va solo tu nombre"></td>
+		</tr>
+		<tr>
+			<td><label for="telefono">Telefono:</label></td>
+			<td><input type="text" id="telefono" name="telefono" placeholder="Aqui va tu telefono a 10 digitos"></td>
+		</tr>
+	</table>
+</form>
+<input type="button" id="button1" name="button1" value="Dale click" onclick="alert('Pedido realizado');"><br><br>
+
+
+</body>
+</html>
